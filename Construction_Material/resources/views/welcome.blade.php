@@ -1,11 +1,10 @@
 <?php
 include '../resources/views/root/header.blade.php';
 ?>
+<link rel="stylesheet" href="{{asset('css/test.css')}}">
 </head>
 <body>
-    <span class="h2">Construction Materials testing Page</span>
+    <span class="h3">Construction Materials testing Page</span>
 </body>
 </html>
 
-
-{{-- google font --}} {{-- font-family: 'Inter', sans-serif; --}}
