@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root {
+    --primary-background-color:#F0F2F5;
+    --secondary-background-color:#FFFFFF;
+
+}
+/* span{
+    font-size: 2rem;
+    color: red;
+    background-color: var(--primary-background-color);
+} */
+.container{
+    width: 1024px;
+    height: 1055px;
+    /* border: 1px solid #000; */
+    background-color: var(--primary-background-color);
+    /* position: relative; */
+}
+.table{
+    width: 959px;
+    height: 738px;
+    /* flex-shrink: 0; */
+    border-radius: 16px;
+    background-color: #FFF;
+    
+    /* position: absolute;
+    margin-top: 50px; */
+
+}
+/* .table td:first-child {
+    margin-right: 21px;
+} */
+input{
+    display: flex;
+    padding: 12px 16px;
+    align-items: center;
+    gap: 5px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    border: 3px solid var(--primary-weak, #E0EFFE);
+}
+#firstname ,#lastname {
+    width:430px;
+    height:48px;
+}
+.row label{
+    padding: 15px;
+}
+
+label{
+    color: var(--text-secondary, #5A5A5D);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+     /* 16px */
+    text-transform: capitalize;
+
+}
+/* #phone , #email,#adress , #password , #re-password{
+    width: 890px;
+    height: 48px;
+} */
+.table tr:not(:first-child) input {
+    width: 890px;
+    height: 48px;
+}
+.btn{
+    width: 335px;
+    height: 52px;
+    background-color: #FF6600;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 10px;
+
+ 
+}
+.no-acc{
+    width: 154.693px;
+    height: 17.143px;
+    flex-shrink: 0;
+    color: #939393;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+/* a{
+    width: 53.548px;
+    height: 20px;
+    flex-shrink: 0;
+    color: #007DFA;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: red;
+} */
+.no-acc a {
+    color: blue; /* Set the text color to blue */
+    font-weight: bold; /* Make the text bold */
+}
