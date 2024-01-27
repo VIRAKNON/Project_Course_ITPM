@@ -16,3 +16,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('Productdetail', function () {
+    return view('Productdetail');
+});
+Route::get('VeiwCardpage', function () {
+    return view('VeiwCard');
+});
+Route::get('CheckOut', function () {
+    return view('CheckOut');
+});
+Route::get('QRScan', function () {
+    return view('QRScan');
+});
+Route::get('CardPay', function () {
+    return view('CardPay');
+});
+Route::get('COD', function () {
+    return view('COD');
+});
+
+

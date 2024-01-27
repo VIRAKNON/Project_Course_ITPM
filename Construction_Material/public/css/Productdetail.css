@@ -1,0 +1,50 @@
+:root
+{
+    --primary-color:#FF6600;
+    --secondary-color:#FFD814;
+    --background-color:#F0F2F5;
+    --second-background-color:#FFFFFF;
+    --color-dark:#393F42;
+    --color-light:#FFFFFF;
+    --color-border:#939393;
+    --color-btn-action:#C8CAD8;
+    --font-family:'Inter';
+}
+body{
+    background-color: var(--background-color);
+    background-color: #FFD814;
+}
+.container{
+    /* background-color: #FF6600; */
+
+}
+.col-12 .img{
+    /* max-width: 100%; */
+}
+.col-12 .img-fluid img{
+    width: 100%;
+    height: 100;
+}
+.sub_image img{
+    width: 100%;
+    height: 100;
+}
+.row .price span{
+    font-size: 20px;
+    color: var(--primary-color);
+}
+.btn_addtoCard button{
+    background-color: var(--secondary-color);
+    color: var(--color-dark);
+    border-radius: 5px;
+    border: none;
+}
+.btn_buyNow button{
+    background-color: var(--primary-color);
+    color: var(--color-light);
+    border-radius: 5px;
+    border: none;
+}
+.p_alsolike{
+    background-color: #FF6600;
+}
