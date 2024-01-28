@@ -53,6 +53,15 @@ Route::get('/test/register', function () {
 Route::get('/demo/brand', function () {
     return view('demo.brandPage');
 });
+Route::get('/menu', function () {
+    return view('menu');
+});
+Route::get('/category', function () {
+    return view('category');
+});
+Route::get('/index1', function () {
+    return view('index1');
+});
 
 ?>
 >>>>>>> 5525b4e350bcde0891d85e1a3c568fb2e48d44ee
