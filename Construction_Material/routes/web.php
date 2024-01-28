@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/test/register', function () {
     return view('test_register');
 });
+Route::get('/demo/brand', function () {
+    return view('demo.brandPage');
+});
