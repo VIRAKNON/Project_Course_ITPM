@@ -6,7 +6,6 @@ include '../resources/views/root/header.blade.php';
 
 <body>
     <span class="h3">Construction Materials testing Page</span>
-<<<<<<< HEAD
     <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
@@ -482,19 +481,8 @@ include '../resources/views/root/header.blade.php';
     ?>
 </body>
 </html>
-=======
-    {{-- <table>
-        <thead>
-            <tr>
-                <th>asdfa</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
->>>>>>> 3c9ff7334af5ea785fc11ddb6e10f88a641fce5d
 
-    <script>
+    {{-- <script>
         fetch('http://localhost/API/brand/get_brand.php')
             .then(result => result.json())
             .then(data => {
