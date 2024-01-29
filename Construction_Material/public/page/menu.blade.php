@@ -1,7 +1,7 @@
 <?php
-include '../resources/views/root/header.blade.php';
+include 'root/header.blade.php';
 ?>
-<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="../css/menu.css">
 </head>
 
 <body>
@@ -21,7 +21,13 @@ include '../resources/views/root/header.blade.php';
             <li><a href="">Sign in</a></li>
         </ul>
         <ul>
-            <li><a href="">logo</a></li>
+            <li>
+                <div class="logo">
+                    <a href="">
+                        <img src="../updoads/logo.jpg" alt="">
+                    </a>
+                </div>
+            </li>
             <li class="hideOnMobile"><a href="">search</a></li>
             <li class="hideOnMobile"><a href="">language</a></li>
             <li class="hideOnMobile"><a href="">Wish List</a></li>
@@ -36,5 +42,5 @@ include '../resources/views/root/header.blade.php';
         </ul>
     </nav>
 </body>
-<script src="js/menu.js"></script>
+<script src="../js/menu.js"></script>
 </html>

@@ -11,7 +11,7 @@ include '../resources/views/root/header.blade.php';
 </style>
 </head>
 
-<body style="background-color:#F0F2F5">
+<body style="background-color:#ffffff">
     <div class="container mt-4 w-50">
         <div class="row">
             {{-- logo --}}

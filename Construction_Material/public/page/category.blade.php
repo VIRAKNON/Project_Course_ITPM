@@ -1,7 +1,7 @@
 <?php
-include '../resources/views/root/header.blade.php';
+include 'root/header.blade.php';
 ?>
-<link rel="stylesheet" href="css/category.css">
+<link rel="stylesheet" href="../css/category.css">
 </head>
 
 <body>
@@ -31,9 +31,6 @@ include '../resources/views/root/header.blade.php';
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 18h16M4 6h16H4Zm0 6h16H4Z"></path>
                         </svg></a></li>
-                <li><a href="">search</a></li>
-                <li><a href="">language</a></li>
-                <li><a href="">Wish List</a></li>
             </ul>
         </nav>
     </div>
