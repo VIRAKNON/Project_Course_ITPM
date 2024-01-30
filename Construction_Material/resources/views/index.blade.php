@@ -72,7 +72,7 @@ include '../resources/views/root/header.blade.php';
     <div class="main-content">
         <div class="container">
             <h2>Hello Crush!</h2>
-            {{-- your_code --}}
+            
         </div>
         <footer>
             <div class="footer">

@@ -3,7 +3,7 @@ include 'root/header.blade.php';
 ?>
 </head>
 
-<body>
+<body style="margin-right: 230px">
     <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
