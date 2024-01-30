@@ -20,3 +20,15 @@ Route::get('/register', function () {
     return view('register');
 });
 
+Route::get('/test/register', function () {
+    return view('test_register');
+});
+Route::get('/user/profile', function () {
+    return view('user_profile');
+});
+Route::get('/setting/page',function(){
+    return view('setting_page');
+});
+Route::get('/manage/product', function(){
+    return view('manage_product');
+});
