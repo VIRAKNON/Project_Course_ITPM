@@ -14,7 +14,31 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index1');
+});
+Route::get('Productdetail', function () {
+    return view('Productdetail');
+});
+Route::get('VeiwCardpage', function () {
+    return view('VeiwCard');
+});
+Route::get('CheckOut', function () {
+    return view('CheckOut');
+});
+Route::get('QRScan', function () {
+    return view('QRScan');
+});
+Route::get('CardPay', function () {
+    return view('CardPay');
+});
+Route::get('COD', function () {
+    return view('COD');
+});
+Route::get('/homepage', function () {
+    return view('root.Homepage');
+});
+Route::get('/index', function () {
+    return view('index');
 });
 Route::get('/register', function () {
     return view('register');
@@ -32,3 +56,17 @@ Route::get('/setting/page',function(){
 Route::get('/manage/product', function(){
     return view('manage_product');
 });
+Route::get('/demo/brand', function () {
+    return view('demo.brandPage');
+});
+// Route::get('/menu', function () {
+//     return view('menu');
+// });
+// Route::get('/category', function () {
+//     return view('category');
+// });
+Route::get('/index1', function () {
+    return view('index1');
+});
+
+?>

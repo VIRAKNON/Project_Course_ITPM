@@ -11,7 +11,6 @@ include '../resources/views/root/header.blade.php';
         width: 195px;
         height: 60px;
     }
-    .btnRegister{
 
     }
     input::placeholder {
@@ -55,7 +54,8 @@ include '../resources/views/root/header.blade.php';
 }
 </style>
 </head>
-<body style="background-color:#F0F2F5">
+
+<body style="background-color:#ffffff">
     <div class="container mt-4 w-50">
         <div class="row">
             {{-- logo --}}
@@ -74,7 +74,8 @@ include '../resources/views/root/header.blade.php';
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-12 rounded-3" style="background-color: #FFFFFF; padding: 30px 30px 5px 30px;
+            <div class="col-xl-12 rounded-3"
+                style="background-color: #FFFFFF; padding: 30px 30px 5px 30px;
             border-radius: 16px;
             background: #FFFFFF;
             box-shadow:  5px 5px 5px #9d9d9d,
@@ -152,6 +153,21 @@ include '../resources/views/root/header.blade.php';
         </div>
     </div>
 </body>
+<script>
+    document.getElementById('togglePassword').addEventListener('click', function() {
+        var passwordInput = document.getElementById('password');
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            this.querySelector('i').classList.remove('fa-eye');
+            this.querySelector('i').classList.add('fa-eye-slash');
+        } else {
+            passwordInput.type = 'password';
+            this.querySelector('i').classList.remove('fa-eye-slash');
+            this.querySelector('i').classList.add('fa-eye');
+        }
+    });
+</script>
+
 </html>
 <script>
     document.getElementById('togglePassword').addEventListener('click', function() {
