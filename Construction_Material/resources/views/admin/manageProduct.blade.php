@@ -1,74 +1,8 @@
 <?php
 include '../resources/views/root/header.blade.php';
 ?>
+<link rel="stylesheet" href="{{asset('css/manage_product.css')}}">
 </head>
-<style>
-
-   .s1{
-       color: var(--Theme-Color-Dark, #464255);
-       font-feature-settings: 'clig' off, 'liga' off;
-       font-family: Inter;
-       font-size: 30px;
-       font-style: normal;
-       font-weight: 600;
-       line-height: normal;
-   }
-   .s2{
-       color: #939393;
-       font-feature-settings: 'clig' off, 'liga' off;
-       font-family: Barlow;
-       font-size: 18px;
-       font-style: normal;
-       font-weight: 500;
-       line-height: normal;
-   }
-   .r1{
-       display: flex;
-       /* width: 422px;
-       height: 108px; */
-       width: 358px;
-       height: 80px;
-       padding: 5px;
-       align-items: flex-start;
-       /* gap: 5px; */
-       flex-shrink: 0;
-       border-radius: 10px;
-       background: var(--white, #FFF);
-       position: relative;
-   }
-   .btnCreate{
-       display: flex;
-       /* width: 229px; */
-       width: 220px;
-       padding-top: 11px;
-       padding-right: 21px;
-       padding-bottom: 10px;
-       padding-left: 21px;
-       /* padding: 11px 21px 10px 21px; */
-       justify-content: center;
-       align-items: center;
-       gap: 10px;
-       border-radius: 8px;
-       background: #F60;
-       border: none;
-       margin-top: 10px;
-       margin-left: -8px;
-   }
-   .add{
-       color: #FFF;
-       font-family: Inter;
-       font-size: 20px;
-       font-style: normal;
-       font-weight: 600;
-       line-height: normal;
-   }
-   .box svg{
-       position: absolute;
-       bottom:1px;
-       left: 18px;
-   }
-
-</style>
 <body  style="background: #F0F2F5;">
 
    <div class="container-fluid">

@@ -1,59 +1,7 @@
 <?php
 include '../resources/views/root/header.blade.php';
 ?>
-<style>
-    *{
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-    }
-    .logo{
-        width: 195px;
-        height: 60px;
-    }
-    .btnRegister{
-
-    }
-    input::placeholder {
-        color: #939393;
-        font-family: Inter;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%;
-    }
-    label{
-        color: var(--text-secondary, #5A5A5D);
-        font-family: 'Inter', sans-serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100%; /* 16px */
-        text-transform: capitalize;
-    }
-    .register{
-        color: #393F42;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-    .btnRegister{
-        width: 335px;
-        height: 52px;
-        color: #FFF;
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-    }
-    .custom-input {
-        padding-top: 10px; /* Add padding to the top */
-        padding-bottom: 10px; /* Add padding to the bottom */
-}
-</style>
+ <link rel="stylesheet" href="{{asset("css/register.css")}}">
 </head>
 <body style="background-color:#F0F2F5">
     <div class="container mt-4 w-50">

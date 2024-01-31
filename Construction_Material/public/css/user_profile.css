@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px; 
+    box-sizing: border-box;
+}
+.h1{
+    width: 234px;
+    color: #393F42;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.3px;
+    margin: auto;
+}
+.p{
+    color: #939393;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: -0.21px;
+}
+/* .register{
+    color: #393F42;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+} */
+.btnRegister{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 33px;
+    width: 222px;
+}
+/* input::placeholder {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+} */
+.left-child{
+    border-radius: 5px;
+    background: #FFF;
+    margin-left: 70px;
+    /* padding: 30px; */
+}
+.sub{
+    background: #F0F2F5;
+    height: 900px;
+}
+.info{
+    padding: 30px;
+}
+
+.right-child{
+    background: #FFF;
+    margin-left: 90px;
+    box-sizing: border-box;
+}
+.s1{
+    color: #000;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.9;
+}
+.bold-1{
+    color: #000;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.s2{
+    color: #939393;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.infor-1 .row{
+    border-bottom: 1px solid rgba(147, 147, 147, 0.25);
+}
