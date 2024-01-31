@@ -56,4 +56,7 @@ Route::get('/index1', function () {
     return view('index1');
 });
 
+Route::view('/admin', 'admin.index');
+Route::view('/index2', 'index2');
+
 ?>
