@@ -9,7 +9,7 @@ include '../resources/views/root/header.blade.php';
         box-sizing: border-box;
     }
     .s1{
-        width: 290px;
+        /* width: 290px; */
         color: var(--Theme-Color-Dark, #464255);
         font-feature-settings: 'clig' off, 'liga' off;
         font-family: Inter;
@@ -88,23 +88,23 @@ include '../resources/views/root/header.blade.php';
     }
 
 </style>
-</head>
-<body>
-    <div class="container" style="background: #F0F2F5; height:1307px; width:1599px;float:right;">
-        <div class="row">
-            <div class="col-xl-12 mt-5" style="margin-left:50px;">
+</head >
+<body  style="background: #F0F2F5; ">
+    <div class="container-fluid p-0 m-0">
+        <div class="row ms-4">
+            <div class="col-xl-12 mt-5" >
                 <p class="s1">Setting</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xl-12" style="margin-left:50px;">
+        <div class="row ms-4">
+            <div class="col-xl-12" >
                 <p class="s2">Hi, Samantha. Welcome back  to CAMEAGLE Admin!</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row ms-4">
             <div class="col-xl-3 mt-3" style="border-radius: 10px;
             background: #FFF; width: 400px;
-            height: 532px; margin-left:50px; ">
+            height: 532px;  ">
                 <div class="row">
                     <div class="col-xl-12 text-center mt-5">
                         <p class="s3">Profile</p>
@@ -128,7 +128,55 @@ include '../resources/views/root/header.blade.php';
                 <div class="row">
                     <div class="col-xl-12 w-20 d-flex justify-content-center mt-4">
                         <input style="border-radius: 8px;
-                        background: #F60;" type="submit" value="Change Profile" class="btn btnRegister form-control  ">
+                        background: #F60;" type="submit" value="Change Profile" class="btn btnRegister form-control" data-bs-toggle="modal" data-bs-target="#editmodal">
+                    </div>
+                       <!-- Modal -->
+                    <div class="modal fade" id="editmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title fs-3 text-success" id="exampleModalLabel">Change Profile</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <!-- body modal -->
+                                <div class="modal-body">
+                                <form action="action.php" class="w-100" method="post">
+                                    <div class="row">
+                                        
+                                        <div class="col-xl-6 mt-2">
+                                            <label for="">First Name</label>
+                                            <input class="form-control shadow-none" type="text" name="firstname" id="" placeholder="Enter your first name">
+                                        </div>
+                                        <div class="col-xl-6 mt-2">
+                                            <label for="">Last Name</label>
+                                            <input type="text" class="form-control shadow-none" name="lastname" id="" placeholder="Enter your last name">
+                                        </div>
+                                        <div class="col-xl-12 mt-2">
+                                            <label for="">Phone Number</label>
+                                            <input class="form-control shadow-none" type="number" name="phone" id=""  placeholder="Enter your phone number">
+                                        </div>
+                                        <div class="col-xl-12 mt-2">
+                                            <label for="">Email</label>
+                                            <input class="form-control shadow-none" type="email" name="email" id="" placeholder="Enter your email">
+                                        </div>
+                                        <div class="col-xl-12 mt-2">
+                                            <label for="">Address</label>
+                                            <input type="text" class="form-control shadow-none" name="address" id="" placeholder="Enter your address">
+                                        </div>
+                                        <div class="col-xl-12 mt-2">
+                                            <label for="">Password</label>
+                                            <input type="password" class="form-control shadow-none" name="password" id="" placeholder="Enter your password">
+                                        </div>
+                                    </div>                                       
+                                </form>
+                                </div>
+                        
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary shadow-none" data-bs-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-success shadow-none">Change</button>
+                                </div>
+                            </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -140,35 +188,35 @@ include '../resources/views/root/header.blade.php';
                     <div class="row">
                         <div class="col-xl-6 mt-3">
                             <label for="">First Name</label>
-                            <input type="text" placeholder="admin first name" class="form-control mt-2" required>
+                            <input type="text" disabled placeholder="admin first name" class="form-control mt-2" required>
                         </div>
                         <div class="col-xl-6 mt-3">
                             <label for="">Last Name</label>
-                            <input type="text" placeholder="admin last name" class="form-control mt-2" required>
+                            <input type="text" disabled placeholder="admin last name" class="form-control mt-2" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xl-12 mt-3">
                             <label for="">Phone Number</label>
-                            <input type="text" placeholder="admin phone number" class="form-control mt-2" required>
+                            <input type="number" disabled placeholder="admin phone number" class="form-control mt-2" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xl-12 mt-3">
                             <label for="">Email</label>
-                            <input type="email" placeholder="admin email" class="form-control mt-2" required>
+                            <input type="email" disabled placeholder="admin email" class="form-control mt-2" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xl-12 mt-3">
                             <label for="">Address</label>
-                            <input type="text" placeholder="admin address" class="form-control mt-2" required>
+                            <input type="text" disabled placeholder="admin address" class="form-control mt-2" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xl-12 mt-3">
                             <label for="">Password</label>
-                            <input type="password" placeholder="admin password" class="form-control mt-2" required>
+                            <input type="password" disabled placeholder="admin password" class="form-control mt-2" required>
                         </div>
     
                     </div>
