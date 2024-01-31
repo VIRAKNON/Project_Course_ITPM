@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index1');
-});
+Route::view('/','index1');
 Route::get('Productdetail', function () {
     return view('Productdetail');
 });
@@ -40,9 +38,6 @@ Route::get('/homepage', function () {
 Route::get('/index', function () {
     return view('index');
 });
-Route::get('/test/register', function () {
-    return view('test_register');
-});
 Route::get('/demo/brand', function () {
     return view('demo.brandPage');
 });
@@ -58,5 +53,24 @@ Route::get('/index1', function () {
 
 Route::view('/admin', 'admin.index');
 Route::view('/index2', 'index2');
+// Admin : manage products , setting page
+// User : register , user profile
+Route::view('/manage/products','admin.manageProduct');
+Route::get('/setting/page',function(){
+    return view('admin.setting_page');
+});
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/test/register', function () {
+    return view('test_register');
+});
+Route::get('/user/profile', function () {
+    return view('user_profile');
+});
+
+
+
 
 ?>
