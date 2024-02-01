@@ -32,6 +32,13 @@ Route::get('CardPay', function () {
 Route::get('COD', function () {
     return view('COD');
 });
+Route::get('controll', function () {
+    return view('admin.controll');
+});
+
+
+
+
 Route::get('/homepage', function () {
     return view('root.Homepage');
 });
@@ -69,6 +76,9 @@ Route::get('/test/register', function () {
 Route::get('/user/profile', function () {
     return view('user_profile');
 });
+Route::get('/manage/user',function(){
+    return view('admin.manage_user');
+})
 
 
 

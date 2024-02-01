@@ -122,7 +122,7 @@ include '../resources/views/root/header.blade.php';
      <div class="row mt-4">
         <div class="col-xl-12 ">
          <table id="example" class="table table-hover" style="width:100%">
-            <thead>
+            <thead style="background-color: #FF6600; color: white; border: none; height: 64px;" >
                 <tr>
                     <th>Product Id</th>
                     <th>Product Name</th>

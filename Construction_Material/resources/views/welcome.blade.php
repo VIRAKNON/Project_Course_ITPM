@@ -41,4 +41,34 @@ include '../app/Connection/connection.php';
         include "../resources/views/root/dataTable.blade.php"
     ?>
 </body>
+<script>
+    new DataTable('#example');
+</script>
+</html>
+
+    {{-- <script>
+        fetch('http://localhost/API/brand/get_brand.php')
+            .then(result => result.json())
+            .then(data => {
+                let row = '';
+                let No = 1;
+                for (let i in data) {
+                    row += `
+                <tr>
+                    <td>${No++}</td>
+                    <td>${data[i]['id']}</td>
+                    <td>${data[i]['b_name']}</td>
+                    <td>${data[i]['b_namekh']}</td>
+                    <td>${data[i]['category']}</td>
+                    <td>${data[i]['categorykh']}</td>
+                    <td>${data[i]['des']}</td>
+                    <td>${data[i]['st']}</td>
+                </tr>
+                `;
+                }
+                document.querySelector('tbody').innerHTML = row;
+            })
+    </script> --}}
+</body>
+
 </html>

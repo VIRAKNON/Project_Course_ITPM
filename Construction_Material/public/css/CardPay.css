@@ -12,6 +12,9 @@
 }
 .btn{
     text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn-scan button{
     border: none;
