@@ -34,18 +34,18 @@ Route::get('CardPay', function () {
 Route::get('COD', function () {
     return view('COD');
 });
-<<<<<<< HEAD
+Route::get('controll', function () {
+    return view('admin.controll');
+});
 
-=======
->>>>>>> 5525b4e350bcde0891d85e1a3c568fb2e48d44ee
+
+
+
 Route::get('/homepage', function () {
     return view('root.Homepage');
 });
 Route::get('/index', function () {
     return view('index');
-<<<<<<< HEAD
-});
-=======
 });
 Route::get('/test/register', function () {
     return view('test_register');
@@ -64,4 +64,3 @@ Route::get('/index1', function () {
 });
 
 ?>
->>>>>>> 5525b4e350bcde0891d85e1a3c568fb2e48d44ee

@@ -1,0 +1,17 @@
+
+.scan_img{
+    width: 600px;
+    height: 200px;
+}
+.scan_img img{
+    width: 100%;
+    height: 100%;
+}
+#imagePreview{
+    width: 600px;
+    height: 200px;
+}
+#imagePreview img{
+    width: 100%;
+    height: 100%;
+}

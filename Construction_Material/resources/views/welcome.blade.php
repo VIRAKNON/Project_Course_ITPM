@@ -41,8 +41,10 @@ include '../app/Connection/connection.php';
         include "../resources/views/root/dataTable.blade.php"
     ?>
 </body>
+<script>
+    new DataTable('#example');
+</script>
 </html>
-<<<<<<< HEAD
 
     {{-- <script>
         fetch('http://localhost/API/brand/get_brand.php')
@@ -70,5 +72,3 @@ include '../app/Connection/connection.php';
 </body>
 
 </html>
-=======
->>>>>>> 5525b4e350bcde0891d85e1a3c568fb2e48d44ee
