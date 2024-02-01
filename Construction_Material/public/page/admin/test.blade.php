@@ -1,8 +1,6 @@
 <?php
-include '../root/header.blade.php';
+include '../admin/header.blade.php';
 ?>
-</head>
-
 <body style="margin-right: 230px">
     <table id="example" class="table table-striped" style="width:100%">
         <thead>
@@ -484,5 +482,7 @@ include '../root/header.blade.php';
             </tr>
         </tfoot>
     </table>
+    <?php include '../admin/dataTable.blade.php';
+    ?>
 </body>
 </html>

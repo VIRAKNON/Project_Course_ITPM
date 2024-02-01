@@ -59,10 +59,10 @@ include '../resources/views/root/header.blade.php';
                 <div class="col-xl-12 m-0 p-0">
                     <nav class="category">
                         <ul class="sideBar">
-                            <li onclick="hide(event)" style="background-color:#FF6600">
+                            <li onclick="hide(event)" style="background-color:#045ea7">
                                 <a href="#" class="d-flex justify-content-between"
-                                    onmouseover="this.style.backgroundColor='#FF6600'"
-                                    onmouseout="this.style.backgroundColor='#FF6600'">
+                                    onmouseover="this.style.backgroundColor='#045ea7'"
+                                    onmouseout="this.style.backgroundColor='#045ea7'">
                                     <span class="text-light">CATEGORIES</span>
                                     <span>
                                         <svg width="30" height="30" fill="none" stroke="#FFFFFF"
