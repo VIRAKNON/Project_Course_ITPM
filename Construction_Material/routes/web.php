@@ -67,6 +67,9 @@ Route::get('/test/register', function () {
 Route::get('/user/profile', function () {
     return view('user_profile');
 });
+Route::get('/manage/user',function(){
+    return view('admin.manage_user');
+})
 
 
 
