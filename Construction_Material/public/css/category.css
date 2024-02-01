@@ -1,40 +1,46 @@
-:root{
-    --primary-color:#FF6600;
-    --secondary-color:#FFD814;
-    --background-color:#F0F2F5;
-    --second-background-color:#FFFFFF;
-    --color-dark:#393F42;
-    --color-light:#FFFFFF;
-    --color-border:#939393;
-    --color-btn-action:#C8CAD8;
-    --font-family:'Inter';
-    --background-color-blur:#2d2d2d98;
+:root {
+    --primary-color: #FF6600;
+    --secondary-color: #FFD814;
+    --background-color: #F0F2F5;
+    --second-background-color: #FFFFFF;
+    --color-dark: #393F42;
+    --color-light: #FFFFFF;
+    --color-border: #939393;
+    --color-btn-action: #C8CAD8;
+    --font-family: 'Inter';
+    --background-color-blur: #2d2d2d98;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     min-height: 100vh;
     font-family: var(--font-family);
     background-color: var(--background-color);
 }
-.category nav{
+
+.category nav {
     background-color: var(--primary-color);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.407);
 }
-.category nav ul{
+
+.category nav ul {
     width: 100%;
     list-style: none;
     display: flex;
-    justify-content: flex-start;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     margin: 0;
+    padding: 0;
 }
-.category nav li{
+
+.category nav li {
     height: 50px;
 }
-.category nav a{
+
+.category nav a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -42,17 +48,22 @@ body{
     align-items: center;
     color: var(--color-light);
 }
-.category nav a:hover{
+
+.category nav a:hover {
     background-color: var(--secondary-color);
     color: var(--color-dark);
 }
-.category .sideBar{
+
+.category nav li:first-child {
+    margin-right: auto;
+}
+.category .sideBar {
     padding: 0px;
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
-    width: 250px;
+    width: 230px;
     z-index: 99;
     background-color: var(--background-color-blur);
     backdrop-filter: blur(10px);
@@ -62,14 +73,24 @@ body{
     align-items: flex-start;
     justify-content: flex-start;
 }
-.category .sideBar li{
+
+.category .sideBar li {
     width: 100%;
 }
-.category .sideBar a{
+
+.category .sideBar a {
     width: 100%;
 }
-@media(max-width: 600px){
+
+#txtWelcom{
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+}
+/* @media(max-width: 600px){
     .category .sideBar{
         width: 100%;
     }
-}
+} */

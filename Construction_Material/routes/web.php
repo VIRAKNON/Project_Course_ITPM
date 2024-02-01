@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/','index1');
 Route::get('Productdetail', function () {
     return view('Productdetail');
 });
@@ -47,20 +45,40 @@ Route::get('/homepage', function () {
 Route::get('/index', function () {
     return view('index');
 });
-Route::get('/test/register', function () {
-    return view('test_register');
-});
 Route::get('/demo/brand', function () {
     return view('demo.brandPage');
 });
-Route::get('/menu', function () {
-    return view('menu');
-});
-Route::get('/category', function () {
-    return view('category');
-});
+// Route::get('/menu', function () {
+//     return view('menu');
+// });
+// Route::get('/category', function () {
+//     return view('category');
+// });
 Route::get('/index1', function () {
     return view('index1');
 });
+
+// Admin : manage products , setting page
+// User : register , user profile 
+Route::view('/manage/products','admin.manageProduct');
+Route::get('/setting/page',function(){
+    return view('admin.setting_page');
+});
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/test/register', function () {
+    return view('test_register');
+});
+Route::get('/user/profile', function () {
+    return view('user_profile');
+});
+Route::get('/manage/user',function(){
+    return view('admin.manage_user');
+})
+
+
+
 
 ?>
