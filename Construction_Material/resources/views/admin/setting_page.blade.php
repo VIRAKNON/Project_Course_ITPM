@@ -6,7 +6,7 @@ include '../resources/views/root/header.blade.php';
 <body  style="background: #F0F2F5; ">
     <div class="container-fluid p-0 m-0">
         <div class="row ms-4">
-            <div class="col-xl-12 mt-5" >
+            <div class="col-xl-12 mt-2" >
                 <p class="s1">Setting</p>
             </div>
         </div>
@@ -44,7 +44,7 @@ include '../resources/views/root/header.blade.php';
                         <input style="border-radius: 8px;
                         background: #F60;" type="submit" value="Change Profile" class="btn btnRegister form-control" data-bs-toggle="modal" data-bs-target="#editmodal">
                     </div>
-                       <!-- Modal -->
+                    <!-- Modal -->
                     <div class="modal fade" id="editmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                             <div class="modal-content">
@@ -56,7 +56,7 @@ include '../resources/views/root/header.blade.php';
                                 <div class="modal-body">
                                 <form action="action.php" class="w-100" method="post">
                                     <div class="row">
-                                        
+
                                         <div class="col-xl-6 mt-2">
                                             <label for="">First Name</label>
                                             <input class="form-control shadow-none" type="text" name="firstname" id="" placeholder="Enter your first name">
@@ -81,10 +81,10 @@ include '../resources/views/root/header.blade.php';
                                             <label for="">Password</label>
                                             <input type="password" class="form-control shadow-none" name="password" id="" placeholder="Enter your password">
                                         </div>
-                                    </div>                                       
+                                    </div>
                                 </form>
                                 </div>
-                        
+
                                 <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary shadow-none" data-bs-dismiss="modal">Cancel</button>
                                 <button type="button" class="btn btn-success shadow-none">Change</button>
@@ -94,7 +94,7 @@ include '../resources/views/root/header.blade.php';
                     </div>
                 </div>
             </div>
-       
+
             <div class="col-xl-4 mt-3" style="border-radius: 10px;
             background: #FFF;
             box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25); width: 540px; height: 532px; margin-left:50px;" >
@@ -132,7 +132,7 @@ include '../resources/views/root/header.blade.php';
                             <label for="">Password</label>
                             <input type="password" disabled placeholder="admin password" class="form-control mt-2" required>
                         </div>
-    
+
                     </div>
                 </div>
             </div>

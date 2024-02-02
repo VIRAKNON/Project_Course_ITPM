@@ -1,13 +1,7 @@
-<!DOCTYPE html <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php
+include '../resources/views/root/header.blade.php';
+?>
     <link rel="stylesheet" href="css/admin/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>CAMEAGLE Admin</title>
 </head>
 
@@ -26,29 +20,29 @@
                     <span class="nav_logo-name">CAMEAGLE Admin</span>
                 </a>
                 <div class="nav_list">
-                    <a href="#" class="nav_link active">
+                    <a href="{{route('admin.dashboard')}}" class="nav_link active" data-content="{{route('admin.dashboard')}}">
                         <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Dashboard</span>
                     </a>
-                    <a href="../page/admin/manageProduct.blade.php" class="nav_link" data-content="../page/admin/manageProduct.blade.php">
+                    <a href="{{route('admin.manageProduct')}}" class="nav_link" data-content="{{route('admin.manageProduct')}}">
                         <i class='bx bx-package nav_icon'></i>
                         <span class="nav_name">Manage Product</span>
                     </a>
-                    <a href="../page/admin/manage_user.blade.php" class="nav_link" data-content="../page/admin/manage_user.blade.php">
+                    <a href="{{route('admin.manageUser')}}" class="nav_link" data-content="{{route('admin.manageUser')}}">
                         <i class='bx bx-user nav_icon'></i>
                         <span class="nav_name">Manage User</span>
                     </a>
-                    <a href="../page/admin/controll.blade.php" class="nav_link" data-content="../page/admin/controll.blade.php">
+                    <a href="{{route('admin.control')}}" class="nav_link" data-content="{{route('admin.control')}}">
                         <i class='bx bx-chip nav_icon'></i>
                         <span class="nav_name">Control</span>
                     </a>
-                    <a href="../page/admin/setting_page.blade.php" class="nav_link" data-content="../page/admin/setting_page.blade.php">
+                    <a href="{{route('admin.setting')}}" class="nav_link" data-content="{{route('admin.setting')}}">
                         <i class='bx bx-cog nav_icon'></i>
                         <span class="nav_name">Setting</span>
                     </a>
                 </div>
             </div>
-            <a href="#" class="nav_link">
+            <a href="#" class="nav_link" data-content="#">
                 <i class='bx bx-log-out nav_icon'></i>
                 <span class="nav_name">SignOut</span>
             </a>
@@ -56,7 +50,7 @@
     </div>
     <!--Container Main start-->
     <div class="main_content" id="main_content">
-        <h4>Main Components</h4>
+        
     </div>
     <!--Container Main end-->
     <script>

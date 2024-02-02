@@ -34,7 +34,7 @@ Route::get('COD', function () {
 });
 Route::get('controll', function () {
     return view('admin.controll');
-});
+})->name('admin.control');
 
 
 
@@ -62,10 +62,10 @@ Route::view('/admin', 'admin.index');
 Route::view('/index2', 'index2');
 // Admin : manage products , setting page
 // User : register , user profile
-Route::view('/manage/products','admin.manageProduct');
-Route::get('/setting/page',function(){
+Route::view('/manageProducts','admin.manageProduct')->name('admin.manageProduct');
+Route::get('/settingPage',function(){
     return view('admin.setting_page');
-});
+})->name('admin.setting');
 Route::get('/register', function () {
     return view('register');
 });
@@ -76,11 +76,11 @@ Route::get('/test/register', function () {
 Route::get('/user/profile', function () {
     return view('user_profile');
 });
-Route::get('/manage/user',function(){
+Route::get('/manageUser',function(){
     return view('admin.manage_user');
-})
+})->name('admin.manageUser');
 
-
+Route::view('dashboard', 'admin.dashboard')->name('admin.dashboard');
 
 
 ?>
