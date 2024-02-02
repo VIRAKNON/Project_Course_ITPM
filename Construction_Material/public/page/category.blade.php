@@ -8,7 +8,7 @@ include 'root/header.blade.php';
     <div class="category">
         <nav>
             <ul class="sideBar">
-                <li onclick="hide(event)"><a href="#"><svg width="25" height="25" fill="none" stroke="#ffffff"
+                <li onclick="hide(event)"><a href="#"><svg width="30" height="30" fill="none" stroke="#ffffff"
                             stroke-linecap="round" stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="m7 7 10 10"></path>
@@ -30,7 +30,9 @@ include 'root/header.blade.php';
                             stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
                             viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M4 18h16M4 6h16H4Zm0 6h16H4Z"></path>
-                        </svg></a></li>
+                        </svg></a>
+                </li>
+
             </ul>
         </nav>
     </div>
