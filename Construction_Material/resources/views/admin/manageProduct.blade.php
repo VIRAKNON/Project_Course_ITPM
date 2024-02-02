@@ -107,7 +107,7 @@ include '../resources/views/root/header.blade.php';
                             
                                  <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary shadow-none" data-bs-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-primary shadow-none">Create</button>
+                                    <button type="button" class="btn btn-primary shadow-none">Save</button>
                                  </div>
                               </div>
                         </div>
@@ -122,7 +122,7 @@ include '../resources/views/root/header.blade.php';
      <div class="row mt-4">
         <div class="col-xl-12 ">
          <table id="example" class="table table-hover" style="width:100%">
-            <thead style="background-color: #FF6600; color: white; border: none; height: 64px;" >
+            <thead style="background-color: #FF6600; color: white; border: none;" >
                 <tr>
                     <th>Product Id</th>
                     <th>Product Name</th>
@@ -231,9 +231,26 @@ include '../resources/views/root/header.blade.php';
                      </div>
                      {{-- action delete  --}}
                      <div>
-                        <button class="btn border-0 shadow-none">
+                        <button class="btn border-0 shadow-none" data-bs-toggle="modal" data-bs-target="#deleteuser">
                            <i style="color:#C8CAD8" class="fas fa-trash fa-lg"></i>
                         </button>
+                        <div class="modal fade" id="deleteuser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                           <div class="modal-content">
+                               <div class="modal-header">
+                               <h5 class="modal-title text-danger" id="exampleModalLabel">Delete Product</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                               </div>
+                               <div class="modal-body">
+                               Are you sure, You want to delete this product ?
+                               </div>
+                               <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               <button type="button" class="btn btn-danger">Delete</button>
+                               </div>
+                           </div>
+                           </div>
+                       </div>
                      </div>
                      {{-- action detail  --}}
                      <div>
@@ -269,7 +286,7 @@ include '../resources/views/root/header.blade.php';
                            <div class="modal-dialog modal-xl">
                                  <div class="modal-content">
                                     <div class="modal-header">
-                                       <h5 class="modal-title fs-3 text-primary" id="exampleModalLabel">Edit Product</h5>
+                                       <h5 class="modal-title fs-3 text-warning" id="exampleModalLabel">Edit Product</h5>
                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <!-- body modal -->
@@ -330,8 +347,8 @@ include '../resources/views/root/header.blade.php';
                                     </div>
                                  
                                     <div class="modal-footer">
-                                       <button type="button" class="btn btn-secondary shadow-none py-2 px-2 p-0" data-bs-dismiss="modal">Cancel</button>
-                                       <button type="button" class="btn btn-primary shadow-none py-2 px-2 p-0">Update</button>
+                                       <button type="button" class="btn btn-secondary shadow-none" data-bs-dismiss="modal">Cancel</button>
+                                       <button type="button" class="btn btn-warning shadow-none">Update</button>
                                     </div>
                                  </div>
                            </div>
@@ -339,9 +356,26 @@ include '../resources/views/root/header.blade.php';
                      </div>
                      {{-- action delete  --}}
                      <div>
-                        <button class="btn border-0 shadow-none">
+                        <button class="btn border-0 shadow-none" data-bs-toggle="modal" data-bs-target="#deleteuser">
                            <i style="color:#C8CAD8" class="fas fa-trash fa-lg"></i>
                         </button>
+                        <div class="modal fade" id="deleteuser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                           <div class="modal-content">
+                               <div class="modal-header">
+                               <h5 class="modal-title text-danger" id="exampleModalLabel">Delete Product</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                               </div>
+                               <div class="modal-body">
+                               Are you sure, You want to delete this product ?
+                               </div>
+                               <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               <button type="button" class="btn btn-danger">Delete</button>
+                               </div>
+                           </div>
+                           </div>
+                       </div>
                      </div>
                      {{-- action detail  --}}
                      <div>
@@ -377,7 +411,7 @@ include '../resources/views/root/header.blade.php';
                            <div class="modal-dialog modal-xl">
                                  <div class="modal-content">
                                     <div class="modal-header">
-                                       <h5 class="modal-title fs-3 text-primary" id="exampleModalLabel">Edit Product</h5>
+                                       <h5 class="modal-title fs-3 text-warning" id="exampleModalLabel">Edit Product</h5>
                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <!-- body modal -->
@@ -438,8 +472,8 @@ include '../resources/views/root/header.blade.php';
                                     </div>
                                  
                                     <div class="modal-footer">
-                                       <button type="button" class="btn btn-secondary shadow-none py-2 px-2 p-0" data-bs-dismiss="modal">Cancel</button>
-                                       <button type="button" class="btn btn-primary shadow-none py-2 px-2 p-0">Update</button>
+                                       <button type="button" class="btn btn-secondary shadow-none" data-bs-dismiss="modal">Cancel</button>
+                                       <button type="button" class="btn btn-warning shadow-none">Update</button>
                                     </div>
                                  </div>
                            </div>
@@ -447,9 +481,26 @@ include '../resources/views/root/header.blade.php';
                      </div>
                      {{-- action delete  --}}
                      <div>
-                        <button class="btn border-0 shadow-none">
+                        <button class="btn border-0 shadow-none" data-bs-toggle="modal" data-bs-target="#deleteuser">
                            <i style="color:#C8CAD8" class="fas fa-trash fa-lg"></i>
                         </button>
+                        <div class="modal fade" id="deleteuser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                           <div class="modal-content">
+                               <div class="modal-header">
+                               <h5 class="modal-title text-danger" id="exampleModalLabel">Delete Product</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                               </div>
+                               <div class="modal-body">
+                               Are you sure, You want to delete this product ?
+                               </div>
+                               <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               <button type="button" class="btn btn-danger">Delete</button>
+                               </div>
+                           </div>
+                           </div>
+                       </div>
                      </div>
                      {{-- action detail  --}}
                      <div>
@@ -485,7 +536,7 @@ include '../resources/views/root/header.blade.php';
                            <div class="modal-dialog modal-xl">
                                  <div class="modal-content">
                                     <div class="modal-header">
-                                       <h5 class="modal-title fs-3 text-primary" id="exampleModalLabel">Edit Product</h5>
+                                       <h5 class="modal-title fs-3 text-warning" id="exampleModalLabel">Edit Product</h5>
                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <!-- body modal -->
@@ -546,8 +597,8 @@ include '../resources/views/root/header.blade.php';
                                     </div>
                                  
                                     <div class="modal-footer">
-                                       <button type="button" class="btn btn-secondary shadow-none py-2 px-2 p-0" data-bs-dismiss="modal">Cancel</button>
-                                       <button type="button" class="btn btn-primary shadow-none py-2 px-2 p-0">Update</button>
+                                       <button type="button" class="btn btn-secondary shadow-none" data-bs-dismiss="modal">Cancel</button>
+                                       <button type="button" class="btn btn-warning shadow-none">Update</button>
                                     </div>
                                  </div>
                            </div>
@@ -555,9 +606,26 @@ include '../resources/views/root/header.blade.php';
                      </div>
                      {{-- action delete  --}}
                      <div>
-                        <button class="btn border-0 shadow-none">
+                        <button class="btn border-0 shadow-none" data-bs-toggle="modal" data-bs-target="#deleteuser">
                            <i style="color:#C8CAD8" class="fas fa-trash fa-lg"></i>
                         </button>
+                        <div class="modal fade" id="deleteuser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                           <div class="modal-content">
+                               <div class="modal-header">
+                               <h5 class="modal-title text-danger" id="exampleModalLabel">Delete Product</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                               </div>
+                               <div class="modal-body">
+                               Are you sure, You want to delete this product ?
+                               </div>
+                               <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               <button type="button" class="btn btn-danger">Delete</button>
+                               </div>
+                           </div>
+                           </div>
+                       </div>
                      </div>
                      {{-- action detail  --}}
                      <div>
@@ -593,7 +661,7 @@ include '../resources/views/root/header.blade.php';
                            <div class="modal-dialog modal-xl">
                                  <div class="modal-content">
                                     <div class="modal-header">
-                                       <h5 class="modal-title fs-3 text-primary" id="exampleModalLabel">Edit Product</h5>
+                                       <h5 class="modal-title fs-3 text-warning" id="exampleModalLabel">Edit Product</h5>
                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <!-- body modal -->
@@ -654,8 +722,8 @@ include '../resources/views/root/header.blade.php';
                                     </div>
                                  
                                     <div class="modal-footer">
-                                       <button type="button" class="btn btn-secondary shadow-none py-2 px-2 p-0" data-bs-dismiss="modal">Cancel</button>
-                                       <button type="button" class="btn btn-primary shadow-none py-2 px-2 p-0">Update</button>
+                                       <button type="button" class="btn btn-secondary shadow-none" data-bs-dismiss="modal">Cancel</button>
+                                       <button type="button" class="btn btn-warning shadow-none">Update</button>
                                     </div>
                                  </div>
                            </div>
@@ -663,9 +731,26 @@ include '../resources/views/root/header.blade.php';
                      </div>
                      {{-- action delete  --}}
                      <div>
-                        <button class="btn border-0 shadow-none">
+                        <button class="btn border-0 shadow-none" data-bs-toggle="modal" data-bs-target="#deleteuser">
                            <i style="color:#C8CAD8" class="fas fa-trash fa-lg"></i>
                         </button>
+                        <div class="modal fade" id="deleteuser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                           <div class="modal-content">
+                               <div class="modal-header">
+                               <h5 class="modal-title text-danger" id="exampleModalLabel">Delete Product</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                               </div>
+                               <div class="modal-body">
+                               Are you sure, You want to delete this product ?
+                               </div>
+                               <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               <button type="button" class="btn btn-danger">Delete</button>
+                               </div>
+                           </div>
+                           </div>
+                       </div>
                      </div>
                      {{-- action detail  --}}
                      <div>
@@ -701,7 +786,7 @@ include '../resources/views/root/header.blade.php';
                            <div class="modal-dialog modal-xl">
                                  <div class="modal-content">
                                     <div class="modal-header">
-                                       <h5 class="modal-title fs-3 text-primary" id="exampleModalLabel">Edit Product</h5>
+                                       <h5 class="modal-title fs-3 text-warning" id="exampleModalLabel">Edit Product</h5>
                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <!-- body modal -->
@@ -762,8 +847,8 @@ include '../resources/views/root/header.blade.php';
                                     </div>
                                  
                                     <div class="modal-footer">
-                                       <button type="button" class="btn btn-secondary shadow-none py-2 px-2 p-0" data-bs-dismiss="modal">Cancel</button>
-                                       <button type="button" class="btn btn-primary shadow-none py-2 px-2 p-0">Update</button>
+                                       <button type="button" class="btn btn-secondary shadow-none" data-bs-dismiss="modal">Cancel</button>
+                                       <button type="button" class="btn btn-warning shadow-none">Update</button>
                                     </div>
                                  </div>
                            </div>
@@ -771,9 +856,26 @@ include '../resources/views/root/header.blade.php';
                      </div>
                      {{-- action delete  --}}
                      <div>
-                        <button class="btn border-0 shadow-none">
+                        <button class="btn border-0 shadow-none" data-bs-toggle="modal" data-bs-target="#deleteuser">
                            <i style="color:#C8CAD8" class="fas fa-trash fa-lg"></i>
                         </button>
+                        <div class="modal fade" id="deleteuser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                           <div class="modal-content">
+                               <div class="modal-header">
+                               <h5 class="modal-title text-danger" id="exampleModalLabel">Delete Product</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                               </div>
+                               <div class="modal-body">
+                               Are you sure, You want to delete this product ?
+                               </div>
+                               <div class="modal-footer">
+                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               <button type="button" class="btn btn-danger">Delete</button>
+                               </div>
+                           </div>
+                           </div>
+                       </div>
                      </div>
                      {{-- action detail  --}}
                      <div>
@@ -787,127 +889,13 @@ include '../resources/views/root/header.blade.php';
                      </div>
                   </td>
                </tr>
-               <tr>
-                  <td>Product Id</td>
-                  <td>Product Name</td>
-                  <td>Brand Name</td>
-                  <td>Stock Date</td>
-                  <td>Category</td>
-                  <td>Unit Price ($)</td>
-                  <td>Unit Cost ($)</td>
-                  <td>In Stock</td>
-                  <td>Path Sample</td>
-                  <td>Status</td>
-                  <td class="d-flex">
-                     {{-- action edit  --}}
-                     <div>
-                        <button type="button"  style="color:#C8CAD8"  class="btn px-2 m-0 border-0 shadow-none" data-bs-toggle="modal" data-bs-target="#editproduct">
-                           <i class="far fa-edit fa-lg"></i>
-                        </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="editproduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                           <div class="modal-dialog modal-xl">
-                                 <div class="modal-content">
-                                    <div class="modal-header">
-                                       <h5 class="modal-title fs-3 text-primary" id="exampleModalLabel">Edit Product</h5>
-                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <!-- body modal -->
-                                    <div class="modal-body">
-                                       <form action="action.php" class="w-100" method="post">
-                                          <div class="row">
-                                             
-                                             <div class="col-xl-4 mt-2">
-                                                <label for="">Product Name</label>
-                                                <input class="form-control shadow-none" type="text" name="productname" id="" placeholder="Enter your product name">
-                                             </div>
-                                             <div class="col-xl-4 mt-2">
-                                                <label for="">Brand Name</label>
-                                                <input type="text" class="form-control shadow-none" name="brandname" id="" placeholder="Enter your brand name">
-                                             </div>
-                                             <div class="col-xl-4 mt-2">
-                                                <label for="">Stock Date</label>
-                                                <input class="form-control shadow-none" type="date" name="std" id="">
-                                             </div>
-                                             <div class="col-xl-6 mt-2">
-                                                <label for="">Category</label>
-                                                <input class="form-control shadow-none" type="text" name="category" id="" placeholder="Enter your category">
-                                             </div>
-                                             <div class="col-xl-4 mt-2">
-                                                <label for="">Unit Price ($)</label>
-                                                <input type="number" step="0.01" class="form-control shadow-none" name="unitprice" id="" placeholder="Enter your unit price">
-                                             </div>
-                                             <div class="col-xl-2 mt-2">
-                                                <label for="">Unit Cost ($)</label>
-                                                <input type="number" step="0.01" class="form-control shadow-none" name="unitcost" id="" placeholder="Enter your unit cost">
-                                             </div>
-                                             <div class="col-xl-6 mt-2">
-                                                <label for="">In Stock</label>
-                                                <input type="number" class="form-control shadow-none" name="instock" id="" placeholder="Enter your stock number">
-                                             </div>
-                                             <div class="col-xl-6 mt-2">
-                                                <label for="">Status</label>
-                                                <select class="form-select shadow-none" name="gender" id="">
-                                                   <option value="Y">Active</option>
-                                                   <option value="N">Inactive</option>
-                                                </select>
-                                             </div>
-                                             <div class="col-xl-12 mt-3 d-flex justify-content-center">
-                                                <label for="">Upload your Product Image</label>
-                                             </div> 
-                                             <div class="col-xl-12 mt-3 d-flex justify-content-center">
-                                                <img src="../updoads/blankimage.jpg" width="300px" alt="">
-                                             </div>                
-                                             <div class="col-xl-4 mt-2">
-                                             </div> 
-                                             <div class="col-xl-4 mt-2">
-                                                <input type="file" class="form-control shadow-none" name="pathsimple" id="" placeholder="Enter your path simple">
-                                             </div> 
-                                             <div class="col-xl-4 mt-2">
-                                             </div> 
-                                          </div>                                       
-                                       </form>
-                                    </div>
-                                 
-                                    <div class="modal-footer">
-                                       <button type="button" class="btn btn-secondary shadow-none py-2 px-2 p-0" data-bs-dismiss="modal">Cancel</button>
-                                       <button type="button" class="btn btn-primary shadow-none py-2 px-2 p-0">Update</button>
-                                    </div>
-                                 </div>
-                           </div>
-                        </div>
-                     </div>
-                     {{-- action delete  --}}
-                     <div>
-                        <button class="btn border-0 shadow-none">
-                           <i style="color:#C8CAD8" class="fas fa-trash fa-lg"></i>
-                        </button>
-                     </div>
-                     {{-- action detail  --}}
-                     <div>
-                        <button class="btn border-0 shadow-none">
-                           <svg width="30" height="30" fill="#C8CAD8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M6 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
-                              <path d="M12 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
-                              <path d="M18 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
-                           </svg>
-                        </button>
-                     </div>
-                  </td>
-               </tr>
-              
-              
             </tbody>
-
         </table>
         <?php
             include '../resources/views/root/dataTable.blade.php';
         ?>
-    
         </div>
      </div>
    </div>
-
-    
 </body>
 </html>

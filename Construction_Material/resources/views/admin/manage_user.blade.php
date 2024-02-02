@@ -39,57 +39,7 @@ include '../resources/views/root/header.blade.php';
                              <img src="{{asset('images/broom.svg')}}" alt="">
                          </span>
                          <span class="add">Clear all User</span>
-                     </button>              
-            
-
-                     {{-- <!-- Modal -->
-                     <div class="modal fade" id="editmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                              <div class="modal-content">
-                                 <div class="modal-header">
-                                    <h5 class="modal-title fs-3 text-primary" id="exampleModalLabel">Add Product</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                 </div>
-                                 <!-- body modal -->
-                                 <div class="modal-body">
-                                    <form action="action.php" class="w-100" method="post">
-                                       <div class="row">
-                                          <div class="col-xl-4 mt-2">
-                                             <label for="">Full Name</label>
-                                             <input type="text" class="form-control shadow-none" name="fullname" id="" placeholder="Enter your full name">
-                                          </div>
-                                          <div class="col-xl-4 mt-2">
-                                             <label for="">Email</label>
-                                             <input class="form-control shadow-none" type="email" name="email" id="">
-                                          </div>
-                                          <div class="col-xl-6 mt-2">
-                                             <label for="">Phone Number</label>
-                                             <input class="form-control shadow-none" type="number" name="phone" id="" placeholder="Enter your phone number">
-                                          </div>
-                                          <div class="col-xl-6 mt-2">
-                                             <label for="">Address</label>
-                                             <input type="text" class="form-control shadow-none" name="address" id="" placeholder="Enter your address">
-                                          </div>
-                                          <div class="col-xl-6 mt-2">
-                                             <label for="">Password</label>
-                                             <input type="password" class="form-control shadow-none" name="password" id="" placeholder="Enter your password">
-                                          </div>
-                                          <div class="col-xl-6 mt-2">
-                                             <label for="">Remark</label>
-                                             <input type="text" class="form-control shadow-none" name="remark" id="" placeholder="Enter your remark">
-                                          </div>
-                                       </div>                                       
-                                    </form>
-                                 </div>
-                            
-                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary shadow-none" data-bs-dismiss="modal">Cancel</button>
-                                    <button type="button" class="btn btn-primary shadow-none">Create</button>
-                                 </div>
-                              </div>
-                        </div>
-                     </div> --}}
-
+                     </button>
                  </span>
              </div>
              </div>
@@ -180,9 +130,27 @@ include '../resources/views/root/header.blade.php';
                      </div>
                      {{-- action delete  --}}
                      <div>
-                        <button class="btn border-0 shadow-none">
+                        <button class="btn border-0 shadow-none" data-bs-toggle="modal" data-bs-target="#deleteuser">
                            <i style="color:#C8CAD8" class="fas fa-trash fa-lg"></i>
                         </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="deleteuser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                 <h5 class="modal-title text-danger" id="exampleModalLabel">Delete User</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                 Are you sure, You want to delete this user ?
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-danger" data-toggle="alert" data-target="#deleteAlert">Delete </button>
+                                 </div>  
+                              </div>
+                           </div>
+                        </div>
                      </div>
                      {{-- action detail  --}}
                      <div>
