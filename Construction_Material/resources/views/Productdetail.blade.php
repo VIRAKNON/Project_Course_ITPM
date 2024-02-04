@@ -46,16 +46,16 @@
                     <div class="col-12">
                         <span>RC-16 Series Metal Cutting Machine - RC-16 Series Metal Cutting Machine</span><br>
                         <span>Brand: <span>Cambodia</span></span><br>
-                        <div class="price py-1" style="color:#FF6600 ;font-size: 20px;">$299.00</div>
+                        <div class="price_item py-1" style="color:#FF6600 ;font-size: 20px;">$299.00</div>
                         <span class="rate">4.5</span>
-                         <span class="star">⭐ ⭐ ⭐ ⭐</span>
+                        <span class="star">⭐ ⭐ ⭐ ⭐</span>
                         <span class="view">120Views</span><br>
 
                         <div class="d-flex py-1">
                             <div class="status"><span>In Stock</span></div>
                             <div class="quantity px-3">
-                                <span class="btn btn_minus   m-0 p-0"><i class="fa fa-minus-square" style="font-size:20px; background: none;"></i></span>
-                                <span class="px-3 number" style="font-size:20px;">1</span>
+                                <span class="btn btn_minus m-0 p-0"><i class="fa fa-minus-square" style="font-size:20px; background: none;"></i></span>
+                                <span class="quantity-value px-3" style="font-size:20px;">1</span>
                                 <span class="btn btn_plus"><i class="fa fa-plus-square" style="font-size:20px; background: none;"></i></span>
                             </div>
                         </div>
@@ -64,10 +64,8 @@
                             <button class="px-4" type="submit">Add to Card</button>
                         </div>
 
-
                         <div class="btn_buyNow mt-1 mb-4">
                             <button type="Buy Now">Buy Now</button>
-
                         </div>
 
                         <div class="about_item">
@@ -111,24 +109,24 @@
                         </div>
                         <div style="width: 250px; height:300px;" class="col-sm-3 sub_item m-4 shadow rounded-3">
                             <div class="like float-end"><i class="fa fa-heart-o" style="font-size:15px"></i></div>
-                            <div class="image">
-                                <a href="#"><img src="https://royaltoiletry.com/wp-content/uploads/2022/01/premium-gold-toilet5.jpg" alt=""></a>
+                            <div class="image" style="width:100%; height:220px;">
+                                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUWBBpH6X7jIPhhDTLFQVdcim06JqsZH8rQ&usqp=CAU" alt=""></a>
                                 <div class="text">Bath room premium 180x220cm</div>
                                 <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span class="price float-end">$299.00</span>
                             </div>
                         </div>
                         <div style="width: 250px; height:300px;" class="col-sm-3 sub_item m-4 shadow rounded-3">
                             <div class="like float-end"><i class="fa fa-heart-o" style="font-size:15px"></i></div>
-                            <div class="image">
-                                <a href="#"><img src="https://royaltoiletry.com/wp-content/uploads/2022/01/premium-gold-toilet5.jpg" alt=""></a>
+                            <div class="image" style="width:100%; height:220px;">
+                                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUWBBpH6X7jIPhhDTLFQVdcim06JqsZH8rQ&usqp=CAU" alt=""></a>
                                 <div class="text">Bath room premium 180x220cm</div>
                                 <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span class="price float-end">$299.00</span>
                             </div>
                         </div>
                         <div style="width: 250px; height:300px;" class="col-sm-3 sub_item m-4 shadow rounded-3">
                             <div class="like float-end"><i class="fa fa-heart-o" style="font-size:15px"></i></div>
-                            <div class="image">
-                                <a href="#"><img src="https://royaltoiletry.com/wp-content/uploads/2022/01/premium-gold-toilet5.jpg" alt=""></a>
+                            <div class="image" style="width:100%; height:220px;">
+                                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUWBBpH6X7jIPhhDTLFQVdcim06JqsZH8rQ&usqp=CAU" alt=""></a>
                                 <div class="text">Bath room premium 180x220cm</div>
                                 <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span class="price float-end">$299.00</span>
                             </div>
@@ -147,24 +145,24 @@
                         </div>
                         <div style="width: 250px; height:300px;" class="col-sm-3 sub_item m-4 shadow rounded-3">
                             <div class="like float-end"><i class="fa fa-heart-o" style="font-size:15px"></i></div>
-                            <div class="image">
-                                <a href="#"><img src="https://royaltoiletry.com/wp-content/uploads/2022/01/premium-gold-toilet5.jpg" alt=""></a>
+                            <div class="image" style="width:100%; height:220px;">
+                                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUWBBpH6X7jIPhhDTLFQVdcim06JqsZH8rQ&usqp=CAU" alt=""></a>
                                 <div class="text">Bath room premium 180x220cm</div>
                                 <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span class="price float-end">$299.00</span>
                             </div>
                         </div>
                         <div style="width: 250px; height:300px;" class="col-sm-3 sub_item m-4 shadow rounded-3">
                             <div class="like float-end"><i class="fa fa-heart-o" style="font-size:15px"></i></div>
-                            <div class="image">
-                                <a href="#"><img src="https://royaltoiletry.com/wp-content/uploads/2022/01/premium-gold-toilet5.jpg" alt=""></a>
+                            <div class="image" style="width:100%; height:220px;">
+                                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsUWBBpH6X7jIPhhDTLFQVdcim06JqsZH8rQ&usqp=CAU" alt=""></a>
                                 <div class="text">Bath room premium 180x220cm</div>
                                 <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span class="price float-end">$299.00</span>
                             </div>
                         </div>
                         <div style="width: 250px; height:300px;" class="col-sm-3 sub_item m-4 shadow rounded-3">
                             <div class="like float-end"><i class="fa fa-heart-o" style="font-size:15px"></i></div>
-                            <div class="image">
-                                <a href="#"><img src="https://royaltoiletry.com/wp-content/uploads/2022/01/premium-gold-toilet5.jpg" alt=""></a>
+                            <div class="image" style="width:100%; height:220px;">
+                                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrVeL9SCReIiz7VlC4j8kvshOcCgAU1Nsuqw&usqp=CAU" alt=""></a>
                                 <div class="text">Bath room premium 180x220cm</div>
                                 <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span class="price float-end">$299.00</span>
                             </div>
@@ -179,30 +177,38 @@
 
 </body>
 <script>
-    $(document).ready(function() {
-        // Quantity Increment
-        $(".quantity .btn-light:last-child").on("click", function() {
-            var quantityValue = $(this).siblings(".quantity-value");
-            var currentValue = parseInt(quantityValue.text());
-            quantityValue.text(currentValue + 1);
-        });
+  document.addEventListener("DOMContentLoaded", function() {
+    const minusBtn = document.querySelector(".fa-minus-square");
+    const plusBtn = document.querySelector(".fa-plus-square");
+    const quantityValue = document.querySelector(".quantity-value");
+    const priceItem = document.querySelector(".price_item");
 
-        // Quantity Decrement
-        $(".quantity .btn-light:first-child").on("click", function() {
-            var quantityValue = $(this).siblings(".quantity-value");
-            var currentValue = parseInt(quantityValue.text());
-            if (currentValue > 1) {
-                quantityValue.text(currentValue - 1);
-            }
-        });
+    let quantity = parseInt(quantityValue.textContent);
+    let price = parseFloat(priceItem.textContent.replace("$", ""));
 
+    minusBtn.addEventListener("click", function() {
+      if (quantity > 1) {
+        quantity--;
+        quantityValue.textContent = quantity;
+        updatePrice();
+      }
     });
 
-    function changeImage(element) {
+    plusBtn.addEventListener("click", function() {
+      quantity++;
+      quantityValue.textContent = quantity;
+      updatePrice();
+    });
+
+    function updatePrice() {
+      priceItem.textContent = "$" + (price * quantity).toFixed(2);
+    }
+
+  });
+  function changeImage(element) {
         var imagePath = element.querySelector('img').src;
         document.getElementById('mainImage').src = imagePath;
         return false; // Prevents default link behavior
     }
 </script>
-
 </html>
