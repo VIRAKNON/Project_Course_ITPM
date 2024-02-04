@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/','index1');
+Route::view('/','index2');
 Route::get('Productdetail', function () {
     return view('Productdetail');
 });

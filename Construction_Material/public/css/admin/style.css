@@ -150,7 +150,7 @@ nav a {
 }
 
 .main_content {
-    height: 200vh;
+    height: 100vh;
     background-color: var(--background-color);
     margin-top: 4rem;
     padding: 15px 15px;

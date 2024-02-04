@@ -39,6 +39,10 @@ nav a{
     align-items: center;
     color: var(--color-dark);
 }
+.search{
+    padding: 0 30px;
+    margin-top: 7.5px;
+}
 nav a:hover{
     background-color: var(--background-color);
     color: var(--color-dark);

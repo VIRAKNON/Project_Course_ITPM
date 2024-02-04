@@ -1,29 +1,32 @@
-:root
-{
-    --primary-color:#FF6600;
-    --secondary-color:#FFD814;
-    --background-color:#F0F2F5;
-    --second-background-color:#FFFFFF;
-    --color-dark:#393F42;
-    --color-light:#FFFFFF;
-    --color-border:#939393;
-    --color-btn-action:#C8CAD8;
-    --font-family:'Inter';
+:root {
+    --primary-color: #FF6600;
+    --secondary-color: #FFD814;
+    --background-color: #F0F2F5;
+    --second-background-color: #FFFFFF;
+    --color-dark: #393F42;
+    --color-light: #FFFFFF;
+    --color-border: #939393;
+    --color-btn-action: #C8CAD8;
+    --font-family: 'Inter';
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
 }
-body{
+
+body {
     background-color: var(--background-color);
 }
+
 .sticky-element {
     position: sticky;
     top: 0;
     z-index: 2;
 }
+
 .carousel-item img {
     width: 100%;
     height: 700px;
@@ -34,37 +37,42 @@ body{
     height: 260px;
 }
 
-.add-business{
+.add-business {
     background-image: url('../image/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     background-position: center;
 }
-.add-business .btn{
+
+.add-business .btn {
     width: 100%;
     height: 40vh;
     display: flex;
     align-items: center;
     color: #ffffff;
 }
-.btn button{
+
+.btn button {
     padding: 8px;
     background-color: #FF6600;
     color: #ffffff;
     border: none;
 }
-.btn button:hover{
+
+.btn button:hover {
     background-color: #ec6205e6;
 }
-.footer{
+
+.footer {
     display: flex;
     width: 100%;
     height: 60vh;
     background-color: #0C2654;
     justify-content: space-evenly;
 }
-.detail{
+
+.detail {
     width: 20%;
     display: flex;
     justify-content: flex-start;
@@ -72,16 +80,154 @@ body{
     line-height: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
-.detail span{
+
+.detail span {
     font-weight: bold;
     font-size: 20px;
     color: #CFD8DC;
     padding-top: 2.2rem;
 }
-.detail a{
+
+.detail a {
     text-decoration: none;
     color: gray;
 }
-.detail a:hover{
+
+.detail a:hover {
     color: #CFD8DC;
+}
+
+/* search */
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 290px;
+}
+
+.input {
+    width: 100%;
+    height: 35px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: 0.3s ease;
+}
+
+.input::placeholder {
+    color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+    outline: none;
+    border-color: rgba(247, 127, 0, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(247 127 0 / 10%);
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+
+/*/search */
+/* language */
+.paste-button {
+    position: relative;
+    display: block;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    padding: 0 30px;
+    margin-top: 5px;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: #212121;
+    padding: 7px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    min-width: 200px;
+    background-color: #212121;
+    border: 2px solid #4CAF50;
+    border-radius: 0px 15px 15px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: #4CAF50;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+}
+
+.dropdown-content a:hover {
+    background-color: #4CAF50;
+    color: #212121;
+}
+
+.dropdown-content a:focus {
+    background-color: #212121;
+    color: #4CAF50;
+}
+
+.dropdown-content #top:hover {
+    border-radius: 0px 13px 0px 0px;
+}
+
+.dropdown-content #bottom:hover {
+    border-radius: 0px 0px 13px 13px;
+}
+
+.paste-button:hover button {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.paste-button:hover .dropdown-content {
+    display: block;
+}
+
+/* /language */
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: var(--secondary-color); /* Red */
+    color: var(--color-dark);
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
 }

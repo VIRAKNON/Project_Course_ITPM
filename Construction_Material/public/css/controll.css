@@ -17,5 +17,5 @@
 }
 .modal-backdrop {
     filter: blur(5px); /* Adjust the blur amount as needed */
-    background-color: rgba(63, 63, 63, 0.416);
+    background-color: rgba(130, 130, 130, 0.229);
 }

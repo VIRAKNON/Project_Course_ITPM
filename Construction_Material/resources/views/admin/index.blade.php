@@ -20,7 +20,7 @@ include '../resources/views/root/header.blade.php';
                     <span class="nav_logo-name">CAMEAGLE Admin</span>
                 </a>
                 <div class="nav_list">
-                    <a href="{{route('admin.dashboard')}}" class="nav_link active" data-content="{{route('admin.dashboard')}}">
+                    <a href="{{route('admin.dashboard')}}" class="nav_link" data-content="{{route('admin.dashboard')}}">
                         <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Dashboard</span>
                     </a>
@@ -50,7 +50,26 @@ include '../resources/views/root/header.blade.php';
     </div>
     <!--Container Main start-->
     <div class="main_content" id="main_content">
-        
+        <div class="row">
+            <div class="col-xl-12">
+                <h1>Home</h1>
+                <p class="">Hi, Samantha. Welcome back  to CAMEAGLE Admin!</p>
+            </div>
+            <div class="col-xl-12">
+                <div class="row">
+                    <div class="col-xl-12 ">
+                        <h3 class="text-center fs-1">Profile</h3>
+                    </div>
+                    <div class="col-xl-12 d-flex justify-content-center">
+                        <img style="width:30%;" src="{{ asset('images/Ellipse 1.svg') }}" alt="Description of the image">
+                    </div>
+                    <div class="col-xl-12 text-center mt-3">
+                        <p class="h1">Welcome, User Fullname</p>
+                        <p class="text-center p">Manage your Activity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--Container Main end-->
     <script>

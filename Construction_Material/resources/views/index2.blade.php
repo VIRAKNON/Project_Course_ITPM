@@ -13,7 +13,7 @@ include '../resources/views/root/header.blade.php';
             <!-- menu -->
             <div class="row m-0">
                 <div class="col-xl-12 m-0 p-0">
-                    <nav>
+                    <nav class="py-3">
                         <ul class="Resp">
                             <li onclick= "hidesidebar1(event)"><a href=""><svg width="30" height="30"
                                         fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
@@ -21,12 +21,61 @@ include '../resources/views/root/header.blade.php';
                                         <path d="m7 7 10 10"></path>
                                         <path d="M7 17 17 7"></path>
                                     </svg></a></li>
-                            <li><a href="">search</a></li>
-                            <li><a href="">language</a></li>
-                            <li><a href="">Wish List</a></li>
+                            <li>
+                                <div class="search">
+                                    <div class="group">
+                                        <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                                            <g>
+                                                <path
+                                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <input class="input" type="search" placeholder="Search" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="margin-bottom: 7px">
+                                <div class="paste-button">
+                                    <button class="button">Language &nbsp; ▼</button>
+                                    <div class="dropdown-content">
+                                        <a id="top" href="#">Khmer</a>
+                                        <a id="middle" href="#">English</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="far fa-heart"></i>&nbsp;
+                                    Wish List
+                                </a>
+                            </li>
                             <li><a href="">Track Order</a></li>
-                            <li><a href="">Cart</a></li>
-                            <li><a href="">Sign in</a></li>
+                            <li>
+                                <a href="">
+                                    <button type="button" class="btn position-relative p-0 shadow-none">
+                                        <svg width="30" height="30" fill="#ffffff" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.25 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                                            <path d="M18.75 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                                            <path
+                                                d="M21.413 5.662a1.121 1.121 0 0 0-.87-.412H6.276L5.99 3.62A.75.75 0 0 0 5.25 3h-3a.75.75 0 0 0 0 1.5h2.37l2.141 12.13a.75.75 0 0 0 .739.62h12a.75.75 0 1 0 0-1.5H8.13l-.265-1.5h11.328a1.128 1.128 0 0 0 1.104-.904l1.35-6.75a1.124 1.124 0 0 0-.234-.934Z">
+                                            </path>
+                                        </svg>
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            99+
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fas fa-user-circle" style="font-size: 25px"></i>&nbsp;
+                                    Sign in
+                                </a>
+                            </li>
                         </ul>
                         <ul>
                             <li>
@@ -36,12 +85,61 @@ include '../resources/views/root/header.blade.php';
                                     </a>
                                 </div>
                             </li>
-                            <li class="hideOnMobile"><a href="">search</a></li>
-                            <li class="hideOnMobile"><a href="">language</a></li>
-                            <li class="hideOnMobile"><a href="">Wish List</a></li>
+                            <li class="hideOnMobile">
+                                <div class="search">
+                                    <div class="group">
+                                        <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                                            <g>
+                                                <path
+                                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                        <input class="input" type="search" placeholder="Search" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hideOnMobile">
+                                <div class="paste-button">
+                                    <button class="button">Language &nbsp; ▼</button>
+                                    <div class="dropdown-content">
+                                        <a id="top" href="#">Khmer</a>
+                                        <a id="middle" href="#">English</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="hideOnMobile">
+                                <a href="">
+                                    <i class="far fa-heart"></i>&nbsp;
+                                    Wish List
+                                </a>
+                            </li>
                             <li class="hideOnMobile"><a href="">Track Order</a></li>
-                            <li class="hideOnMobile"><a href="">Cart</a></li>
-                            <li class="hideOnMobile"><a href="">Sign in</a></li>
+                            <li class="hideOnMobile">
+                                <a href="">
+                                    <button type="button" class="btn position-relative p-0 shadow-none">
+                                        <svg width="30" height="30" fill="#000000" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.25 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                                            <path d="M18.75 21a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+                                            <path
+                                                d="M21.413 5.662a1.121 1.121 0 0 0-.87-.412H6.276L5.99 3.62A.75.75 0 0 0 5.25 3h-3a.75.75 0 0 0 0 1.5h2.37l2.141 12.13a.75.75 0 0 0 .739.62h12a.75.75 0 1 0 0-1.5H8.13l-.265-1.5h11.328a1.128 1.128 0 0 0 1.104-.904l1.35-6.75a1.124 1.124 0 0 0-.234-.934Z">
+                                            </path>
+                                        </svg>
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            99+
+                                            <span class="visually-hidden">unread messages</span>
+                                        </span>
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="hideOnMobile">
+                                <a href="">
+                                    <i class="fas fa-user-circle" style="font-size: 25px"></i>&nbsp;
+                                    Sign in
+                                </a>
+                            </li>
                             <li class="btnMenu" onclick="showsidebar1()"><a href="#"><svg width="25"
                                         height="25" fill="#000000" viewBox="0 0 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -86,9 +184,10 @@ include '../resources/views/root/header.blade.php';
                             <li><a href="">Sign in</a></li>
                         </ul>
                         <ul class="menu2">
-                            <li onclick="show()"><a href="#"><svg width="35" height="35" fill="none"
-                                        stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <li onclick="show()"><a href="#"><svg width="35" height="35"
+                                        fill="none" stroke="#ffffff" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4 18h16M4 6h16H4Zm0 6h16H4Z"></path>
                                     </svg></a>
                             </li>
@@ -134,7 +233,21 @@ include '../resources/views/root/header.blade.php';
                 </div>
                 <div class="row m-0 p-0">
                     <div class="col-xl-12 m-0 py-1 px-0">
+                        <!--block annoncements-->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="alert">
+                                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                                    <b>Breaking News:</b> In the tranquil embrace of the early morning, the sun painted the sky with hues of pink and gold, casting a warm glow over the sleepy town. Birds chirped harmoniously, orchestrating nature's symphony, as dew-kissed flowers nodded gently in the soft breeze. The world awakened to the promise of a new day, where possibilities unfolded like the petals of a blooming flower, inviting everyone to embrace the beauty and potential that lay ahead.
+                                </div>
+                            </div>
+                        </div>
+                        <!--/block annoncements-->
+                        <div class="row">
+                            <div class="col-xl-12">
 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

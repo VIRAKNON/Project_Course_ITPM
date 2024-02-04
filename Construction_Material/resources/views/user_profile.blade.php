@@ -1,4 +1,4 @@
-<?php 
+<?php
 
     include '../resources/views/root/header.blade.php';
 ?>
@@ -87,11 +87,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-3 d-flex justify-content-center mb-2"  > 
+                        <div class="col-xl-3 d-flex justify-content-center mb-2"  >
                             <img style="width: 70%;" src="{{ asset('images/Rectangle 1399.svg') }}" alt="Description of the image">
                         </div>
                         <div class="col-xl-8 right">
-                            <p class="s1" style="margin: 0px; text-align:justify;">Nitecore P10iX Tactical Flashlight Floodlight, 4000 Lumen LED USB-C Rechargeable 
+                            <p class="s1" style="margin: 0px; text-align:justify;">Nitecore P10iX Tactical Flashlight Floodlight, 4000 Lumen LED USB-C Rechargeable
                                 Super Bright Compact with LumenTac Organizer
                             </p>
                             <p  class="mt-3 bold-1" style="margin: 0px;">$20.34</p>
@@ -108,11 +108,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-3 d-flex justify-content-center mb-2 "  > 
+                        <div class="col-xl-3 d-flex justify-content-center mb-2 "  >
                             <img style="width: 70%;" src="{{ asset('images/Rectangle 1399.svg') }}" alt="Description of the image">
                         </div>
                         <div class="col-xl-8 right">
-                            <p class="s1" style="margin: 0px; text-align:justify;">Nitecore P10iX Tactical Flashlight Floodlight, 4000 Lumen LED USB-C Rechargeable 
+                            <p class="s1" style="margin: 0px; text-align:justify;">Nitecore P10iX Tactical Flashlight Floodlight, 4000 Lumen LED USB-C Rechargeable
                                 Super Bright Compact with LumenTac Organizer
                             </p>
                             <p  class="mt-3 bold-1" style="margin: 0px;">$20.34</p>
@@ -129,11 +129,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-3 d-flex justify-content-center mb-2"  > 
+                        <div class="col-xl-3 d-flex justify-content-center mb-2"  >
                             <img style="width: 70%;" src="{{ asset('images/Rectangle 1399.svg') }}" alt="Description of the image">
                         </div>
                         <div class="col-xl-8 right">
-                            <p class="s1" style="margin: 0px; text-align:justify;">Nitecore P10iX Tactical Flashlight Floodlight, 4000 Lumen LED USB-C Rechargeable 
+                            <p class="s1" style="margin: 0px; text-align:justify;">Nitecore P10iX Tactical Flashlight Floodlight, 4000 Lumen LED USB-C Rechargeable
                                 Super Bright Compact with LumenTac Organizer
                             </p>
                             <p  class="mt-3 bold-1" style="margin: 0px;">$20.34</p>
@@ -154,6 +154,6 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 </html>
