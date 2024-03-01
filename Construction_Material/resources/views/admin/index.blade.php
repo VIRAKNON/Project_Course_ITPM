@@ -16,7 +16,7 @@ include '../resources/views/root/header.blade.php';
         <nav class="nav">
             <div>
                 <a href="#" class="nav_logo">
-                    <i class='bx bx-layer nav_logo-icon'></i>
+                    <img src="updoads/logo1.jpg" width="27px" alt="" class="rounded-circle ">
                     <span class="nav_logo-name">CAMEAGLE Admin</span>
                 </a>
                 <div class="nav_list">

@@ -1,6 +1,6 @@
 <?php
 include '../resources/views/root/header.blade.php';
-// include '../app/Connection/connection.php';
+include '../app/Connection/connection.php';
 ?>
 <link rel="stylesheet" href="{{ asset('css/controll.css') }}">
 </head>
@@ -38,7 +38,7 @@ include '../resources/views/root/header.blade.php';
                                         <path d="M12 8v8"></path>
                                         <path d="M8 12h8"></path>
                                     </svg>
-                                    <span style="color: #ffffff;">Category </span>
+                                    <span style="color: #ffffff;">Category</span>
                                 </button>
 
                                 <!-- Modal -->
@@ -49,12 +49,12 @@ include '../resources/views/root/header.blade.php';
                                             <div class="modal-header">
                                                 <h5 class="modal-title fs-3 text-primary" id="exampleModalLabel">Add
                                                     category</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
                                             <!-- body modal -->
                                             <div class="modal-body">
-                                                <form action="action.php" class="w-100" method="post">
+                                                <form action="API/category/create.php" method="POST" class="w-100" >
                                                     <div class="row">
 
                                                         <div class="col-xl-6 mt-2">
@@ -71,8 +71,7 @@ include '../resources/views/root/header.blade.php';
                                                         </div>
                                                         <div class="col-xl-6 mt-2">
                                                             Description: <br>
-                                                            <textarea class="form-control shadow-none" rows="5" cols="50" name="Description" id="Description">
-                                                        </textarea>
+                                                            <input type="text" name="Description" id="" class="form-control shadow-none" placeholder ="Enter the description">
                                                         </div>
                                                         <div class="col-xl-6 mt-2">
                                                             <label for="">Status</label>
@@ -83,13 +82,14 @@ include '../resources/views/root/header.blade.php';
                                                             </select>
                                                         </div>
                                                     </div>
-                                                </form>
-                                            </div>
 
-                                           <div class="modal-footer">
-                                              <button type="button" class="btn btn-secondary shadow-none py-2 px-2 p-0" data-bs-dismiss="modal">Cancel</button>
-                                              <button type="button" class="btn btn-primary shadow-none py-2 px-2 p-0">Save</button>
-                                           </div>
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary shadow-none py-1 px-4 p-0" data-bs-dismiss="modal">Cancel</button>
+                                                        <input type="submit" name="btnCreateCate" class="btn btn-primary shadow-none py-1 px-4 p-0" value="Create">
+                                                    </div>
+                                                </form>
                                         </div>
                                     </div>
                                 </div>
@@ -124,15 +124,18 @@ include '../resources/views/root/header.blade.php';
                                 <td>circle</td>
                                 <td>active</td>
                                 <td>
-                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
-                                        <svg width="18" height="18" fill="none" stroke="#007bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Edit">
+                                        <svg width="18" height="18" fill="none" stroke="#007bff"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                                         </svg>
                                     </a>
-                                   <span class="btn delete">
+                                    <span class="btn delete">
                                         <i class="fa fa-trash-o" style="font-size:18px; color:red;"></i>
-                                   </span>
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
@@ -143,15 +146,18 @@ include '../resources/views/root/header.blade.php';
                                 <td>circle</td>
                                 <td>active</td>
                                 <td>
-                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
-                                        <svg width="18" height="18" fill="none" stroke="#007bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Edit">
+                                        <svg width="18" height="18" fill="none" stroke="#007bff"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                                         </svg>
                                     </a>
-                                   <span class="btn delete">
+                                    <span class="btn delete">
                                         <i class="fa fa-trash-o" style="font-size:18px; color:red;"></i>
-                                   </span>
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
@@ -162,15 +168,18 @@ include '../resources/views/root/header.blade.php';
                                 <td>circle</td>
                                 <td>active</td>
                                 <td>
-                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
-                                        <svg width="18" height="18" fill="none" stroke="#007bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Edit">
+                                        <svg width="18" height="18" fill="none" stroke="#007bff"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                                         </svg>
                                     </a>
-                                   <span class="btn delete">
+                                    <span class="btn delete">
                                         <i class="fa fa-trash-o" style="font-size:18px; color:red;"></i>
-                                   </span>
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
@@ -181,15 +190,18 @@ include '../resources/views/root/header.blade.php';
                                 <td>circle</td>
                                 <td>active</td>
                                 <td>
-                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
-                                        <svg width="18" height="18" fill="none" stroke="#007bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Edit">
+                                        <svg width="18" height="18" fill="none" stroke="#007bff"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                                         </svg>
                                     </a>
-                                   <span class="btn delete">
+                                    <span class="btn delete">
                                         <i class="fa fa-trash-o" style="font-size:18px; color:red;"></i>
-                                   </span>
+                                    </span>
                                 </td>
                             </tr>
                         </tbody>
@@ -281,10 +293,13 @@ include '../resources/views/root/header.blade.php';
                                                     </div>
                                                 </form>
                                             </div>
-                                           <div class="modal-footer">
-                                              <button type="button" class="btn btn-secondary shadow-none py-2 px-2 p-0" data-bs-dismiss="modal">Cancel</button>
-                                              <button type="button" class="btn btn-primary shadow-none py-2 px-2 p-0">Save</button>
-                                           </div>
+                                            <div class="modal-footer">
+                                                <button type="button"
+                                                    class="btn btn-secondary shadow-none py-2 px-2 p-0"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                                <button type="button"
+                                                    class="btn btn-primary shadow-none py-2 px-2 p-0">Save</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -363,15 +378,18 @@ include '../resources/views/root/header.blade.php';
                                 <td>circle</td>
                                 <td>active</td>
                                 <td>
-                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
-                                        <svg width="18" height="18" fill="none" stroke="#007bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Edit">
+                                        <svg width="18" height="18" fill="none" stroke="#007bff"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                                         </svg>
                                     </a>
-                                   <span class="btn delete">
+                                    <span class="btn delete">
                                         <i class="fa fa-trash-o" style="font-size:18px; color:red;"></i>
-                                   </span>
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
@@ -443,8 +461,10 @@ include '../resources/views/root/header.blade.php';
                                     <div class="modal-dialog modal-xl">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                               <h5 class="modal-title fs-3 text-primary" id="exampleModalLabel">Add Banner</h5>
-                                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <h5 class="modal-title fs-3 text-primary" id="exampleModalLabel">Add
+                                                    Banner</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
                                             </div>
                                             <!-- body modal -->
                                             <div class="modal-body">
@@ -488,10 +508,13 @@ include '../resources/views/root/header.blade.php';
                                                 </form>
                                             </div>
 
-                                           <div class="modal-footer">
-                                              <button type="button" class="btn btn-secondary shadow-none py-2 px-2 p-0" data-bs-dismiss="modal">Cancel</button>
-                                              <button type="button" class="btn btn-primary shadow-none py-2 px-2 p-0">Save</button>
-                                           </div>
+                                            <div class="modal-footer">
+                                                <button type="button"
+                                                    class="btn btn-secondary shadow-none py-2 px-2 p-0"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                                <button type="button"
+                                                    class="btn btn-primary shadow-none py-2 px-2 p-0">Save</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -533,15 +556,18 @@ include '../resources/views/root/header.blade.php';
                                 <td>banner in slide</td>
                                 <td>active</td>
                                 <td>
-                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
-                                        <svg width="18" height="18" fill="none" stroke="#007bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Edit">
+                                        <svg width="18" height="18" fill="none" stroke="#007bff"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                                         </svg>
                                     </a>
-                                   <span class="btn delete">
+                                    <span class="btn delete">
                                         <i class="fa fa-trash-o" style="font-size:18px; color:red;"></i>
-                                   </span>
+                                    </span>
                                 </td>
 
                             </tr>
@@ -559,15 +585,18 @@ include '../resources/views/root/header.blade.php';
                                 <td>banner in slide</td>
                                 <td>active</td>
                                 <td>
-                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
-                                        <svg width="18" height="18" fill="none" stroke="#007bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Edit">
+                                        <svg width="18" height="18" fill="none" stroke="#007bff"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                                         </svg>
                                     </a>
-                                   <span class="btn delete">
+                                    <span class="btn delete">
                                         <i class="fa fa-trash-o" style="font-size:18px; color:red;"></i>
-                                   </span>
+                                    </span>
                                 </td>
 
                             </tr>
@@ -585,15 +614,18 @@ include '../resources/views/root/header.blade.php';
                                 <td>banner in slide</td>
                                 <td>active</td>
                                 <td>
-                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
-                                        <svg width="18" height="18" fill="none" stroke="#007bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Edit">
+                                        <svg width="18" height="18" fill="none" stroke="#007bff"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                                         </svg>
                                     </a>
-                                   <span class="btn delete">
+                                    <span class="btn delete">
                                         <i class="fa fa-trash-o" style="font-size:18px; color:red;"></i>
-                                   </span>
+                                    </span>
                                 </td>
                             </tr>
                         </tbody>
@@ -631,16 +663,18 @@ include '../resources/views/root/header.blade.php';
                                         </path>
                                         <path d="M12 8v8"></path>
                                         <path d="M8 12h8"></path>
-                                      </svg>
-                                     <span style="color: #ffffff;">Add Announ </span>
+                                    </svg>
+                                    <span style="color: #ffffff;">Add Announ </span>
                                 </button>
                                 <div class="modal fade" id="create_announ" tabindex="-1"
                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-xl">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                               <h5 class="modal-title fs-3 text-primary" id="exampleModalLabel">Add Announcement</h5>
-                                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <h5 class="modal-title fs-3 text-primary" id="exampleModalLabel">Add
+                                                    Announcement</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
                                             </div>
                                             <!-- body modal -->
                                             <div class="modal-body">
@@ -665,10 +699,13 @@ include '../resources/views/root/header.blade.php';
                                                 </form>
                                             </div>
 
-                                           <div class="modal-footer">
-                                              <button type="button" class="btn btn-secondary shadow-none py-2 px-2 p-0" data-bs-dismiss="modal">Cancel</button>
-                                              <button type="button" class="btn btn-primary shadow-none py-2 px-2 p-0">Save</button>
-                                           </div>
+                                            <div class="modal-footer">
+                                                <button type="button"
+                                                    class="btn btn-secondary shadow-none py-2 px-2 p-0"
+                                                    data-bs-dismiss="modal">Cancel</button>
+                                                <button type="button"
+                                                    class="btn btn-primary shadow-none py-2 px-2 p-0">Save</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -712,15 +749,18 @@ include '../resources/views/root/header.blade.php';
                                 </td>
                                 <td>Inactive</td>
                                 <td>
-                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
-                                        <svg width="18" height="18" fill="none" stroke="#007bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Edit">
+                                        <svg width="18" height="18" fill="none" stroke="#007bff"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                                         </svg>
                                     </a>
-                                   <span class="btn delete">
+                                    <span class="btn delete">
                                         <i class="fa fa-trash-o" style="font-size:18px; color:red;"></i>
-                                   </span>
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
@@ -742,15 +782,18 @@ include '../resources/views/root/header.blade.php';
                                 </td>
                                 <td>Inactive</td>
                                 <td>
-                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
-                                        <svg width="18" height="18" fill="none" stroke="#007bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="" class="btn_edite" type="button" data-bs-toggle="tooltip"
+                                        data-bs-placement="top" title="Edit">
+                                        <svg width="18" height="18" fill="none" stroke="#007bff"
+                                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                                         </svg>
                                     </a>
-                                   <span class="btn delete">
+                                    <span class="btn delete">
                                         <i class="fa fa-trash-o" style="font-size:18px; color:red;"></i>
-                                   </span>
+                                    </span>
                                 </td>
                             </tr>
                         </tbody>

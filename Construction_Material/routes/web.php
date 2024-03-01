@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/','index2');
-Route::get('Productdetail', function () {
+Route::get('', function () {
     return view('Productdetail');
-});
+})->name('Productdetail');
 Route::get('VeiwCardpage', function () {
     return view('VeiwCard');
 });
@@ -42,9 +42,7 @@ Route::get('controll', function () {
 Route::get('/homepage', function () {
     return view('root.Homepage');
 });
-Route::get('/index', function () {
-    return view('index');
-});
+
 Route::get('/demo/brand', function () {
     return view('demo.brandPage');
 });
@@ -54,12 +52,10 @@ Route::get('/demo/brand', function () {
 // Route::get('/category', function () {
 //     return view('category');
 // });
-Route::get('/index1', function () {
-    return view('index1');
-});
 
 Route::view('/admin', 'admin.index');
-Route::view('/index2', 'index2');
+
+Route::view('/index', 'index2');
 // Admin : manage products , setting page
 // User : register , user profile
 Route::view('/manageProducts','admin.manageProduct')->name('admin.manageProduct');

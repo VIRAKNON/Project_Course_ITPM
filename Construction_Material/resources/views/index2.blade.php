@@ -4,6 +4,7 @@ include '../resources/views/root/header.blade.php';
 <link rel="stylesheet" href="css/index2.css">
 <link rel="stylesheet" href="css/menu.css">
 <link rel="stylesheet" href="css/category.css">
+{{-- <link rel="stylesheet" href="css/home.css"> --}}
 </head>
 
 <body>
@@ -172,7 +173,7 @@ include '../resources/views/root/header.blade.php';
                                     </span>
                                 </a>
                             </li>
-                            <li><a href="../page/test1.blade.php" class="loadPage">search</a></li>
+                            <li><a href="pages/product.blade.php" class="loadPage">Product</a></li>
                             <li><a href="">language</a></li>
                             <li><a href="">Wish List</a></li>
                             <li><a href="">Track Order</a></li>
@@ -191,7 +192,6 @@ include '../resources/views/root/header.blade.php';
                                         <path d="M4 18h16M4 6h16H4Zm0 6h16H4Z"></path>
                                     </svg></a>
                             </li>
-                            <li><a href="">Newest stock</a></li>
                             <li><a href="">Newest stock</a></li>
                             <li><a href="">Newest stock</a></li>
                             <li><a href="">Newest stock</a></li>
@@ -231,21 +231,369 @@ include '../resources/views/root/header.blade.php';
                         </div>
                     </div>
                 </div>
-                <div class="row m-0 p-0">
-                    <div class="col-xl-12 m-0 py-1 px-0">
-                        <!--block annoncements-->
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="alert">
-                                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                                    <b>Breaking News:</b> In the tranquil embrace of the early morning, the sun painted the sky with hues of pink and gold, casting a warm glow over the sleepy town. Birds chirped harmoniously, orchestrating nature's symphony, as dew-kissed flowers nodded gently in the soft breeze. The world awakened to the promise of a new day, where possibilities unfolded like the petals of a blooming flower, inviting everyone to embrace the beauty and potential that lay ahead.
+                <div class="container">
+                    <div class="feature pt-4">
+                        <label>Feature Product</label>
+                        <div class="feature-product">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row pt-3">
+                                        <div class="col-md-3 mb-4">
+                                            <div class="shadow p-3 bg-body rounded">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="like float-end"><i class="far fa-heart"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="image">
+                                                            <a href="#"><img src="../image/machine2.webp"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="text">Bath room premium 180x220cm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span
+                                                            class="price float-end">$299.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <div class="shadow p-3 bg-body rounded">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="like float-end"><i class="far fa-heart"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="image">
+                                                            <a href="#"><img src="../image/machine3.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="text">Bath room premium 180x220cm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span
+                                                            class="price float-end">$299.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <div class="shadow p-3 bg-body rounded">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="like float-end"><i class="far fa-heart"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="image">
+                                                            <a href="#"><img
+                                                                    src="https://royaltoiletry.com/wp-content/uploads/2022/01/premium-gold-toilet5.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="text">Bath room premium 180x220cm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span
+                                                            class="price float-end">$299.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <div class="shadow p-3 bg-body rounded">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="like float-end"><i class="far fa-heart"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="image">
+                                                            <a href="#"><img src="../image/paint1.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="text">Bath room premium 180x220cm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span
+                                                            class="price float-end">$299.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!--/block annoncements-->
-                        <div class="row">
-                            <div class="col-xl-12">
-
+                    </div>
+                    <div class="feature pt-4">
+                        <label style="background-color: #0066FF">Recommended Product</label>
+                        <div class="recommade-product">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row pt-3">
+                                        <div class="col-md-3 mb-4">
+                                            <div class="shadow p-3 bg-body rounded">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="like float-end"><i class="far fa-heart"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="image">
+                                                            <a href="#"><img src="../image/paint2.webp"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="text">Bath room premium 180x220cm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span
+                                                            class="price float-end">$299.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <div class="shadow p-3 bg-body rounded">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="like float-end"><i class="far fa-heart"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="image">
+                                                            <a href="#"><img src="../image/machine4.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="text">Bath room premium 180x220cm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span
+                                                            class="price float-end">$299.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <div class="shadow p-3 bg-body rounded">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="like float-end"><i class="far fa-heart"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="image">
+                                                            <a href="#"><img src="../image/machine5.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="text">Bath room premium 180x220cm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span
+                                                            class="price float-end">$299.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <div class="shadow p-3 bg-body rounded">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="like float-end"><i class="far fa-heart"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="image">
+                                                            <a href="#"><img src="../image/machine6.webp"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="text">Bath room premium 180x220cm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span
+                                                            class="price float-end">$299.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row pt-3">
+                                        <div class="col-md-3 mb-4">
+                                            <div class="shadow p-3 bg-body rounded">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="like float-end"><i class="far fa-heart"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="image">
+                                                            <a href="#"><img src="../image/machine10.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="text">Bath room premium 180x220cm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span
+                                                            class="price float-end">$299.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <div class="shadow p-3 bg-body rounded">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="like float-end"><i class="far fa-heart"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="image">
+                                                            <a href="#"><img src="../image/machine8.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="text">Bath room premium 180x220cm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span
+                                                            class="price float-end">$299.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <div class="shadow p-3 bg-body rounded">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="like float-end"><i class="far fa-heart"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="image">
+                                                            <a href="#"><img src="../image/machine7.jpg"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="text">Bath room premium 180x220cm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span
+                                                            class="price float-end">$299.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 mb-4">
+                                            <div class="shadow p-3 bg-body rounded">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="like float-end"><i class="far fa-heart"></i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="image">
+                                                            <a href="#"><img src="../image/machine9.jfif"
+                                                                    alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="text">Bath room premium 180x220cm</div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="stars float-left">⭐️ ⭐️ ⭐️ ⭐️</span><span
+                                                            class="price float-end">$299.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -312,6 +660,5 @@ include '../resources/views/root/header.blade.php';
     </div>
 </body>
 <script src="js/index2.js"></script>
-{{-- <script src="js/category.js"></script> --}}
 
 </html>

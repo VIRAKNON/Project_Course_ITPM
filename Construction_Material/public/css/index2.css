@@ -231,3 +231,19 @@ input:hover {
 .closebtn:hover {
     color: black;
 }
+
+.feature-product .image img{
+    width: 100%;
+    height: 260px;
+}
+.feature label{
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: #FD349C;
+    color: #eee;
+    border-radius: 5px;
+}
+.recommade-product .image img{
+    width: 100%;
+    height: 260px;
+}
